@@ -11,9 +11,18 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { '\\f', ':Neotree reveal<CR> filesystem', desc = 'NeoTree reveal filesystem', silent = true },
+    { '\\g', ':Neotree reveal git_status<CR>', desc = 'NeoTree reveal git_status', silent = true },
   },
   opts = {
+    git_status = {
+      window = {
+        position = 'float',
+        mappings = {
+          ['\\'] = 'close_window',
+        },
+      },
+    },
     filesystem = {
       window = {
         position = 'current',
