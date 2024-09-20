@@ -3,6 +3,10 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+  -- Git related plugins
+  { 'tpope/vim-fugitive' },
+  { 'tpope/vim-rhubarb' },
+
   {
     'rmagatti/auto-session',
     lazy = false,
